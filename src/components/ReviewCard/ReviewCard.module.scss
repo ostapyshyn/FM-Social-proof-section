@@ -1,0 +1,17 @@
+.container {
+  max-width: 350px;
+  background-color: var(--very-dark-magenta);
+  padding: 40px 32px 35px 32px;
+
+  .name {
+    color: var(--white);
+  }
+
+  .buyer {
+    color: var(--soft-pink);
+  }
+
+  .review {
+    color: var(--white);
+  }
+}
