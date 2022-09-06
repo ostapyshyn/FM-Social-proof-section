@@ -1,0 +1,21 @@
+.container {
+  max-width: 445px;
+  background-color: var(--white);
+
+  h1 {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color: var(--very-dark-magenta);
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 25px;
+    letter-spacing: -0.633333px;
+    color: var(--dark-grayish-magenta);
+    margin-top: 20px;
+  }
+}
