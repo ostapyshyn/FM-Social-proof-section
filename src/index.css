@@ -10,6 +10,7 @@
   --soft-pink: hsl(333, 80%, 67%);
   --very-dark-magenta: hsl(300, 43%, 22%);
   --white: hsl(0, 0%, 100%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
 }
 
 body {

@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 445px;
+  background-color: var(--light-grayish-magenta);
+  padding: 19px 20px 19px 32px;
+  border-radius: 8px;
+
+  .stars {
+    margin-right: 32.45px;
+    .star {
+      margin-right: 8.45px;
+    }
+    .star:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  .text {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    color: var(--very-dark-magenta);
+  }
+}

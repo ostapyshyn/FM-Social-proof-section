@@ -1,11 +1,12 @@
+import RateBar from './components/RateBar/';
 import ReviewCard from './components/ReviewCard';
+
 import colton from './assets/img/image-colton.jpg';
-import RateCard from './components/ReviewCard/ReviewCard';
 
 function App() {
   return (
     <>
-      <RateCard />
+      <RateBar text={'Rated 5 Stars in BestTech'} />
       <ReviewCard
         name="Colton Smith"
         img={colton}
