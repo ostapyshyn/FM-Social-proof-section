@@ -2,19 +2,21 @@ import React from 'react';
 
 import styles from './ReviewCard.module.scss';
 
-function ReviewCard({ img, name, review }) {
+function RateCard({ img, name, review }) {
   return (
     <section className={styles.container}>
-      <div>
-        <div>
+      <div className={styles.user}>
+        <div className={styles.image}>
           <img src={img} alt="user" />
         </div>
-        <h2 className={styles.name}>{name}</h2>
-        <p className={styles.buyer}>Verified Buyer</p>
+        <div>
+          <h2 className={styles.name}>{name}</h2>
+          <p className={styles.buyer}>Verified Buyer</p>
+        </div>
       </div>
       <p className={styles.review}>{review}</p>
     </section>
   );
 }
 
-export default ReviewCard;
+export default RateCard;
