@@ -2,9 +2,9 @@ import React from 'react';
 
 import styles from './ReviewCard.module.scss';
 
-function RateCard({ img, name, review }) {
+function RateCard({ img, name, review, top }) {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} style={{ marginTop: top }}>
       <div className={styles.user}>
         <div className={styles.image}>
           <img src={img} alt="user" />
