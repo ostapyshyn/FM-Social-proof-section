@@ -4,9 +4,9 @@ import styles from './RateBar.module.scss';
 
 import { Star } from '../../assets/svg/svg-icons';
 
-function RateBar({ text }) {
+function RateBar({ text, margin }) {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} style={{ marginLeft: margin }}>
       <div className={styles.stars}>
         {Array.from({ length: 5 }, (_, i) => (
           <span key={i} className={styles.star}>

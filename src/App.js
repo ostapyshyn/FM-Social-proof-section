@@ -10,30 +10,39 @@ import styles from './App.module.scss';
 
 function App() {
   return (
-    <>
-      {/* <About /> */}
-      {/* <RateBar text={'Rated 5 Stars in BestTech'} />*/}
-      <div className={styles.container}>
-        <ReviewCard
-          name="Colton Smith"
-          img={colton}
-          review="“ We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent! ”"
-          top={0}
-        />
-        <ReviewCard
-          name="Irene Roberts"
-          img={irene}
-          review="“ Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery.”"
-          top={16}
-        />
-        <ReviewCard
-          name="Anne Wallace"
-          img={anne}
-          review="“ Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone! ”"
-          top={32}
-        />
-      </div>
-    </>
+    <main>
+      
+        <div className={styles.topInfo}>
+          <About />
+          <div className={styles.rates}>
+            <RateBar text={'Rated 5 Stars in Reviews'} margin={0} />
+            <RateBar text={'Rated 5 Stars in Report Guru'} margin={48} />
+            <RateBar text={'Rated 5 Stars in BestTech'} margin={95} />
+          </div>
+        </div>
+
+        <div className={styles.reviews}>
+          <ReviewCard
+            name="Colton Smith"
+            img={colton}
+            review="“ We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent! ”"
+            top={0}
+          />
+          <ReviewCard
+            name="Irene Roberts"
+            img={irene}
+            review="“ Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery.”"
+            top={16}
+          />
+          <ReviewCard
+            name="Anne Wallace"
+            img={anne}
+            review="“ Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone! ”"
+            top={32}
+          />
+        </div>
+      
+    </main>
   );
 }
 

@@ -1,8 +1,32 @@
-.container {
+.topInfo {
+  margin: 0 auto;
+  max-width: 1110px;
+  margin-bottom: 71px;
+  width: 100%;
+
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+}
+
+.reviews {
   margin: 0 auto;
   max-width: 1110px;
   border: 1px solid #ccc;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.rates {
+  max-width: 540px;
+  border: 1px solid #ccc;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
