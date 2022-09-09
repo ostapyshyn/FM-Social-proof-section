@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
 }
 
 html,
@@ -42,5 +43,12 @@ code {
 @media (max-width: 920px) {
   body {
     padding-block: 82px 99px;
+  }
+
+  html,
+  body,
+  #root {
+    height: auto;
+    min-height: 100vh;
   }
 }
