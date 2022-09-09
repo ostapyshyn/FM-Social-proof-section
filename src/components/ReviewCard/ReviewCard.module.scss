@@ -3,16 +3,13 @@
   background-color: var(--very-dark-magenta);
   padding: 40px 32px 32px 32px;
   border-radius: 8px;
-  margin-top: 24px;
 
   .user {
+    margin-bottom: 31px;
     display: flex;
     align-items: center;
-    margin-bottom: 31px;
-
     .image {
       margin-right: 23px;
-
       img {
         border-radius: 50%;
         width: 40px;
@@ -42,4 +39,14 @@
     letter-spacing: -0.303571px;
     color: var(--white);
   }
+
+  &:nth-child(2) {
+    transform: translateY(16px);
+  }
+
+  &:nth-child(3) {
+    transform: translateY(32px);
+  }
+
+  
 }

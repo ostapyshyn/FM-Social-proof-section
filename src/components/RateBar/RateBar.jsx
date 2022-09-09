@@ -4,15 +4,20 @@ import styles from './RateBar.module.scss';
 
 import { Star } from '../../assets/svg/svg-icons';
 
-function RateBar({ text, margin }) {
+const times = (fn, n) => Array.from({ length: n }, (_, idx) => fn(idx));
+
+function RateBar({ text, value }) {
   return (
-    <section className={styles.container} style={{ marginLeft: margin }}>
+    <section className={styles.container}>
       <div className={styles.stars}>
-        {Array.from({ length: 5 }, (_, i) => (
-          <span key={i} className={styles.star}>
-            <Star />
-          </span>
-        ))}
+        {times(
+          (id) => (
+            <span key={id} className={styles.star}>
+              <Star />
+            </span>
+          ),
+          value,
+        )}
       </div>
 
       <h2 className={styles.text}>{text}</h2>

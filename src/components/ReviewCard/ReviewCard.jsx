@@ -2,16 +2,18 @@ import React from 'react';
 
 import styles from './ReviewCard.module.scss';
 
-function RateCard({ img, name, review, top }) {
+function RateCard({ user, review }) {
   return (
-    <section className={styles.container} style={{ marginTop: top }}>
+    <section className={styles.container}>
       <div className={styles.user}>
         <div className={styles.image}>
-          <img src={img} alt="user" />
+          <img src={user.photo} alt="user" />
         </div>
         <div>
-          <h2 className={styles.name}>{name}</h2>
-          <p className={styles.buyer}>Verified Buyer</p>
+          <h2 className={styles.name}>{user.name}</h2>
+          <p className={styles.buyer}>
+            {user.isVerified ? 'Verified Buyer' : 'Not Verified Buyer'}
+          </p>
         </div>
       </div>
       <p className={styles.review}>{review}</p>

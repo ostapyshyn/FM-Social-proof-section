@@ -7,15 +7,28 @@
     font-size: 56px;
     line-height: 48px;
     letter-spacing: -2px;
+
     color: var(--very-dark-magenta);
+
+    @media (max-width: 920px) {
+      text-align: center;
+      font-size: 40px;
+      line-height: 32px;
+      letter-spacing: -1.42857px;
+    }
   }
 
-  h2 {
+  p {
     font-weight: 500;
     font-size: 19px;
     line-height: 25px;
     letter-spacing: -0.633333px;
     color: var(--dark-grayish-magenta);
     margin-top: 20px;
+
+    @media (max-width: 920px) {
+      text-align: center;
+      margin-bottom: 40px;
+    }
   }
 }
